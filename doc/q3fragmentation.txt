@@ -1,0 +1,49 @@
+Q3 Fragmentation:
+	Server Side:
+		Netchan_Transmit
+			if ( length >= FRAGMENT_SIZE ) {		// Enter condition
+				chan->unsentFragments = qtrue;
+			...
+			// Send datagram
+			...
+			Netchan_TransmitNextFragment( chan );
+				if ( chan->unsentFragmentStart == chan->unsentLength && fragmentLength != FRAGMENT_SIZE ) {		// Exit condition
+					chan->outgoingSequence++;
+					chan->unsentFragments = qfalse;
+
+		SV_SendClientMessages
+			if ( c->netchan.unsentFragments ) {
+				SV_Netchan_TransmitNextFragment( c );
+					Netchan_TransmitNextFragment( &client->netchan );
+					if (!client->netchan.unsentFragments) {
+						// Check whether packet queue not empty (accumulated while we sending framgents).
+						// If it's not then start sending these packets
+		
+		SV_Netchan_Transmit
+			if (client->netchan.unsentFragments) {
+				Netchan_TransmitNextFragment(&client->netchan);
+				
+	
+	Client Side:
+		Netchan_Process
+			if ( sequence & FRAGMENT_BIT ) {
+				sequence &= ~FRAGMENT_BIT;
+				fragmented = qtrue;
+			...
+			if ( fragmented ) {
+				fragmentStart = MSG_ReadShort( msg );
+				fragmentLength = MSG_ReadShort( msg );
+			...
+			if ( sequence != chan->fragmentSequence ) {	// Got first fragment of new fragment sequence
+				chan->fragmentSequence = sequence;
+				chan->fragmentLength = 0;
+			...
+			Com_Memcpy( chan->fragmentBuffer + chan->fragmentLength, 
+				msg->data + msg->readcount, fragmentLength );
+			chan->fragmentLength += fragmentLength;
+			
+			// if this wasn't the last fragment, don't process anything
+			if ( fragmentLength == FRAGMENT_SIZE ) {
+				return qfalse;
+			
+			// else combine all fragments into one buffer and process it as unfragmented packet

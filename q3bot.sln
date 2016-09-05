@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q3HuffmanTest", "Q3HuffmanTest\Q3HuffmanTest.csproj", "{2C502814-0546-4D7B-97AC-AA75CD4C31B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q3Network", "Q3Network\Q3Network.csproj", "{094F9D49-FBC4-4F0C-A8E5-082E0755EF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q3NetworkTest", "Q3NetworkTest\Q3NetworkTest.csproj", "{F3533A5E-2E70-4D09-BC49-0C0406AA89B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "BitConverter\Utils.csproj", "{77B3007A-1FF2-41E6-AD43-FF0CF72E5125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{56D891B7-ED69-42AE-A83E-FB0C1FCC88F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuakeTextBoxTest", "QuakeTextBoxTest\QuakeTextBoxTest.csproj", "{BA3EC72B-5D52-472A-9665-081CC70246B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q3Renderer", "Q3Renderer\Q3Renderer.csproj", "{62D5202C-BE8E-49FD-9E7B-0EE631C1A801}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C502814-0546-4D7B-97AC-AA75CD4C31B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C502814-0546-4D7B-97AC-AA75CD4C31B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C502814-0546-4D7B-97AC-AA75CD4C31B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C502814-0546-4D7B-97AC-AA75CD4C31B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094F9D49-FBC4-4F0C-A8E5-082E0755EF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094F9D49-FBC4-4F0C-A8E5-082E0755EF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094F9D49-FBC4-4F0C-A8E5-082E0755EF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094F9D49-FBC4-4F0C-A8E5-082E0755EF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3533A5E-2E70-4D09-BC49-0C0406AA89B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3533A5E-2E70-4D09-BC49-0C0406AA89B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3533A5E-2E70-4D09-BC49-0C0406AA89B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3533A5E-2E70-4D09-BC49-0C0406AA89B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B3007A-1FF2-41E6-AD43-FF0CF72E5125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B3007A-1FF2-41E6-AD43-FF0CF72E5125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B3007A-1FF2-41E6-AD43-FF0CF72E5125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B3007A-1FF2-41E6-AD43-FF0CF72E5125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D891B7-ED69-42AE-A83E-FB0C1FCC88F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D891B7-ED69-42AE-A83E-FB0C1FCC88F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D891B7-ED69-42AE-A83E-FB0C1FCC88F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D891B7-ED69-42AE-A83E-FB0C1FCC88F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3EC72B-5D52-472A-9665-081CC70246B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3EC72B-5D52-472A-9665-081CC70246B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3EC72B-5D52-472A-9665-081CC70246B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3EC72B-5D52-472A-9665-081CC70246B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D5202C-BE8E-49FD-9E7B-0EE631C1A801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D5202C-BE8E-49FD-9E7B-0EE631C1A801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D5202C-BE8E-49FD-9E7B-0EE631C1A801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D5202C-BE8E-49FD-9E7B-0EE631C1A801}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
